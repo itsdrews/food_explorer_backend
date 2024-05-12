@@ -6,10 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon ./src/server.js",
-    "migrate": "knex migrate:latest"
+    "migrate": "knex migrate:latest",
+    "start": "pm2-runtime start ecosystem.config.js --env production"
   },
   "keywords": [],
-  "author": "",
+  "author": "drew",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
